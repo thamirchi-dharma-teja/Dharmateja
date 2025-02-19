@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins" sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080808;
+    color: #fff;
+}
+#header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    padding: 30px 10%;
+    /* background-color: #b5a9a9; */
+}
+nav{
+    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #080808;
+}
+nav h1{
+    /* background-color: #ff004f; */
+    font-size: 40px;
+    font-family: "poppins" sans-serif;
+    stroke-width: 3px;
+    color: #ff004f;
+    text-align: justify;
+}
+.logo{
+    width: 200px;
+    color: #ff004f;
+}
+nav ul li {
+    display: inline;
+    justify-content: right;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s; 
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header_text p{
+    margin-top: 20%;
+    font-size: 30px;
+    /* margin-left: 20%; */
+    text-align: center;
+    justify-content: center;
+}
+.header_text h1{
+    /* margin-top: 20%; */
+    font-size: 30px;
+    /* margin-left: 20%; */
+    align-items: center;
+    text-align: center;
+    color: #ababab;
+}
+.header_text h1 span{
+    font-size: 50px;
+    color: #ff004f;
+}
+.about{
+    padding: 80px 0 80px;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row2{
+    padding-right: 80px;
+    flex-basis: 35%;
+   
+
+}
+.row2 img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+.row1{
+    /* background-color: #ff004f; */
+    width: 800px;
+    padding-left: 80px ;
+    align-items: center;
+  
+}
+.row1 h1{
+   font-size:50px;
+   color: #fff;
+}
+.row1 p{
+    padding-top: 20px;
+    font-size: 25px;
+}
+.btn {
+    width: 320px;
+    font-size: 35px;
+    background:transparent;
+    color: #fff;
+    padding: 5px 15px;   
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px solid#FE9100;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background-color:#FE9100;
+}
+.btech{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem 15rem;
+}
+.btech img{
+    /* padding: 120px; */
+    width: 100px;
+    height: 100%;
+}
+
+.Edu_details{
+    padding-left: 129px;
+    /* background-color: red; */
+}
+.edu_header{
+    padding: 5% 5% 3%;
+    font-size: 60px;
+}
+.education hr{
+    width: 70%;
+    height: 2px;
+    padding-left: 80px;
+}
+.education h2{
+    font-size: 25px;
+    color: #ff004f;
+}
+.education h3{
+    font-size: 15px;
+    color: #ababab;
+}
+
+.line{
+    height: 2px;
+    width: 65%;
+    margin-left: 13rem;
+    background-color: #fff;
+}
+ /* ---------------skills----------------- */
+ #Skills h1{
+    padding: 8% 5% 2% ;
+    font-size: 50px;
+ }
+ .Skills{
+    /* background-color:#FE9100; */
+    display: flex;
+    padding: 2% 5% ;
+    justify-content: space-between;
+ }
+
+.skill1{
+    display: flex;
+    align-items: center;  
+    
+}
+.skill1 h2{
+    /* background-color: blue; */
+   padding-left: 480px;
+}
+progress{
+    width: 600px;
+    } 
+.skills .skill_value1 h2{
+    padding-left: 450px ;
+}
+.skill_value_html h2{
+    padding-left: 446px;
+}
+.skill_value_js h2{
+    padding-left:515px;
+}
+.skill_value_c h2{
+    padding-left: 520px;
+}
+.skill_contents h1{
+    color: blue;
+}
+
+/* ---------------projects--------------- */
+.projects_list1{
+    /* background-color: #fff; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.projects-list2{
+    /* background-color: #fff; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+.project img{
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    background-color: #ababab;
+}
+.sub-title{
+    font-size: 50px;
+    padding-top: 5%;
+}
+.layer{
+    width: 80%;
+    height: 0;
+    background:linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.project:hover{
+    transform: scale(1.1);
+}
+.project:hover .layer{
+    height: 100%;
+}
+.layer2 h4{
+    display: flex;
+    overflow: hidden;
+    font-size: 25px;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* position: absolute; */
+    background: rgba(0,0,0,0.6),#ababab;
+    padding: 0 40px;
+}
+/* -------------------contact------------------ */
+.contacts{
+    display: flex;
+    margin-top: 50px;
+    /* padding: 30px 10%; */
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    font-size: 25px;
+    margin-top: 30px;
+    color:#ababab ;
+}
+.contact-left p i{
+    margin-right: 10px;
+    color: #ff004f;
+}
+.social-icons a{
+    text-decoration: none;
+    margin-top: 40px;
+    font-size: 40px;
+    padding-left: 35px;
+    margin-right: 10px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.contact-left a{
+    padding: 5%;
+}
+.btn.btn2{
+    font-size: 35px;
+    display: inline-block;
+        text-align: center;
+}
+.contact-right form{
+    width: 100%;
+    margin-left: 140px;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #ababab;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 6px;
+
+}
+form.btn.btn2{
+    width: 50px;
+    padding: 15px 70px;
+    font-size: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    background-color: #ababab;
+    text-align: center;
+}
